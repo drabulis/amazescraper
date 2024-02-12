@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scraped Data</title>
+</head>
+<body>
+    <h1>Scraped Data</h1>
+    <ul>
+        {% for item in data %}
+            <li>{{ item.title }} - <a href="{{ item.url }}">{{ item.url }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
